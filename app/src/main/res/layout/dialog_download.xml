@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:id="@+id/txt_title"
+        android:text="Download file"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:singleLine="true"
+        android:gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/txt_progress"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        style="@style/DialogTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        style="@style/DialogButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_center_btn_bg"
+        android:text="@string/cancel" />
+
+</LinearLayout>

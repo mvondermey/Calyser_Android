@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">S&amp;F</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- main view -->
+    <string name="server">Server</string>
+    <string name="client">Client</string>
+    <string name="send">Send</string>
+    <string name="join_chat">Connect to other device</string>
+    <string name="join">Connect</string>
+    <string name="set">OK</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="input_ip">Please enter Host IP address</string>
+    <string name="input_name">Please input your name</string>
+    <string name="ip_title">Host IP address</string>
+    <string name="name_title">Set User Name</string>
+    <string name="welcome">Welcome %1$s</string>
+    <string name="loading">Loading...</string>
+    <string name="waiting_server">Waiting for host confirmation.</string>
+    <string name="connect_wifi">Please connect to wifi network...</string>
+    <string name="back_exit">Tap return key again to exit</string>
+    <string name="invalid_ip">Invalid IP address</string>
+    <string name="server_not_found">Server not found</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="connect_device_via_ip">Other devices could connect to you via below IP address:</string>
+    <!-- xxx agreed your request -->
+    <!-- xxx disagreed your request -->
+    <string name="reply_request">%1$s %2$s your request</string>
+
+    <!-- dialog -->
+    <string name="allow">Accept</string>
+    <string name="deny">Decline</string>
+    <string name="confirm">Confirm</string>
+    <string name="warn">Warning</string>
+    <string name="request_message">%1$s sent a connection request.</string>
+    <string name="close_server_confirm">Are you sure you want to stop the session?</string>
+    <string name="close_client_confirm">Are you sure you want to leave the chat?</string>
+    <string name="server_close">The host has stopped the session.</string>
+    <string name="wifi_disconnect">You are disconnected...</string>
+
+    <!-- image description -->
+    <string name="img_desc">image description</string>
+
+    <!-- chat view -->
+    <string name="chat">Chat</string>
+    <string name="not_open">Unable to open the file</string>
+    <string name="waiting">Waiting...</string>
+    <string name="pause">Pause</string>
+    <string name="click_download">Receive</string>
+    <string name="finished">Open</string>
+    <string name="user_quit">%1$s has left.</string>
+    <string name="share_file">sent a file: %1$s</string>
+    <string name="user_join">%1$s joined.</string>
+    <string name="no_one_join">No one join the chat</string>
+    <string name="empty_message">Can not send empty message</string>
+
+    <!-- container view -->
+    <string name="container">Container</string>
+    <string name="import_file">Importing file, please wait...</string>
+
+    <!-- public -->
+    <string name="network_error">Network error</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- file manager -->
+    <string name="back">..Back to</string>
+    <string name="paste">paste</string>
+    <string name="delete">delete</string>
+    <string name="edit">edit</string>
+    <string name="move">move</string>
+    <string name="search">Search</string>
+    <string name="refresh">refresh</string>
+    <string name="edit_title">Please choose operation</string>
+    <string name="sd_not_found">SD card not found</string>
+    <string name="floder">folder</string>
+    <string name="rename_folder">Rename Folder</string>
+    <string name="rename_file">Rename File</string>
+    <string name="edit_album_name">Edit Album Name</string>
+    <string name="input_new_name">Please input new name </string>
+    <string name="duplicate_filename">Duplicate filename, Do you want to cover?</string>
+    <string name="rename_failed">Rename failed</string>
+    <string name="delete_file">Delete File</string>
+    <string name="delete_album_confirm_videos">Are you sure you want to delete this album? The videos will be deleted permanently from your Container.</string>
+    <string name="delete_album_confirm_photos">Are you sure you want to delete this album? The photos will be deleted permanently from your Container.</string>
+
+
+    <string name="delete_album">Delete Album</string>
+    <string name="delete_folder">Delete Folder</string>
+    <string name="delete_file_confirm">Are you sure you want to delete this file?</string>
+    <string name="delete_folder_confirm">Are you sure you want to delete this folder?</string>
+
+    <string name="success">Success</string>
+    <string name="failed">failed</string>
+    <string name="input_flolder_name">Enter Folder Name</string>
+    <string name="new_folder">Create New Folder</string>
+    <string name="folder_exist">the folder have exist!</string>
+    <string name="no_access">No access</string>
+    <string name="no_file">There are no file to paste</string>
+    <string name="notice">Notice</string>
+    <string name="paste_file">Paste file</string>
+    <string name="weather_cover_samename_file">Do you want cover the same name file </string>
+    <string name="do_you_want_import_the_file">Do you want import the file </string>
+    <string name="take_photo">Take Photo</string>
+    <string name="take_vedio">Take Video</string>
+    <string name="my_document">My Document</string>
+    <string name="video_album">Video Album</string>
+    <string name="photo_album">Photo Album</string>
+    <string name="title_activity_import_from_sd">import_from_sd</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="new_album">New Album</string>
+    <string name="enter_new_album_name">Enter New Album Name</string>
+    <string name="delete_single_photo">Are you sure you want to delete this photo?</string>
+    <string name="delete_single_photo_message">Are you sure you want to delete this photo?</string>
+    <string name="you_can_not_change_the_folder">You can not change the folder</string>
+    <string name="are_you_want_import_this_file">Are you want import this file?</string>
+    <string name="move_successful">Moved successfully</string>
+    <string name="you_need_choose_a_album">You need choose a album!</string>
+    <string name="are_you_sure_you_want_to_delete_the_selected">Are you sure you want to delete the selected </string>
+    <string name="delete_file_please_wait">delete files please wait..</string>
+    <string name="unable_import">Unable to import into your Documents</string>
+    <string name="rename">Rename</string>
+    <string name="empty_title">Photo Album is the place to store your very private photos. There are two ways to place photos into your photo album.</string>
+    <string name="empty_first_tab">1. Tap</string>
+    <string name="empty_first_tab_back">to import photo(s) from camera rolls.</string>
+    <string name="empty_second_tab">2. Tap</string>
+    <string name="empty_second_back">to take a new photo into the photo vault</string>
+    <string name="connecation_refused">Connection refused</string>
+    <string name="unable_to_connect_to">Unable to connect to </string>
+    <string name="host">Host: </string>
+    <string name="members">Members: </string>
+    <string name="documents">Documents</string>
+    <string name="photos">Photo(s)</string>
+    <string name="videos">Video(s)</string>
+    <string name="selected"> selected</string>
+    <string name="select">Select </string>
+
+</resources>

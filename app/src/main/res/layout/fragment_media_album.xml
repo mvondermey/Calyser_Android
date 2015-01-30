@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/lv_album"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_album_bottom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_wifiupload"
+            android:layout_weight="1"
+            android:background="@color/album_content_color"
+            android:layout_width="0dp"
+            android:paddingBottom="3dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_user"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_wifiupload_style"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:text="WIFI Upload"
+                android:layout_below="@id/btn_user"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

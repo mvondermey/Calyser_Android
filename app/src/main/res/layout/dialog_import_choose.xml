@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Select file source" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/btn_sd"
+            android:background="@drawable/dialog_center_top_btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/img_sd"
+                android:background="@drawable/icon_sd"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:layout_toRightOf="@id/img_sd"
+                style="@style/DialogButtonStyle"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:id="@+id/btn_from_sd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:text="Import from SD card" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffcccccc" />
+
+        <RelativeLayout
+            android:background="@drawable/dialog_center_btn_bg"
+            android:id="@+id/btn_dropbox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/img_dropbox"
+                android:background="@drawable/icon_dropbox"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                style="@style/DialogButtonStyle"
+                android:layout_toRightOf="@id/img_dropbox"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:id="@+id/btn_from_dropbox"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Import from dropbox" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

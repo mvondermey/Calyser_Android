@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="@string/ip_title" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/edt_ip"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_ip"
+            android:digits="0123456789."
+            android:text="192.168.1."
+            android:focusable="true"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:background="@drawable/edittext_bg" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffcccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/DialogButtonStyle"
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_left_btn_bg"
+            android:text="@string/join" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#ffcccccc" />
+
+        <Button
+            style="@style/DialogButtonStyle"
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_right_btn_bg"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</LinearLayout>

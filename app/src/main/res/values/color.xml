@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button style -->
+    <drawable name="btn_normal">#ff00b4ff</drawable>
+    <drawable name="btn_click">#ff0076a7</drawable>
+    <drawable name="btn_delete_normal">#ffd10a00</drawable>
+    <drawable name="btn_delete_click">#ff6e0001</drawable>
+    <drawable name="btn_edit_normal">#ffd1c400</drawable>
+    <drawable name="btn_edit_click">#ff6e6600</drawable>
+    <drawable name="btn_share_normal">#ff88d100</drawable>
+    <drawable name="btn_share_click">#ff3f6e00</drawable>
+    <drawable name="btn_private_normal">#ff827f81</drawable>
+    <drawable name="btn_private_click">#ff3b3c38</drawable>
+    <color name="dialog_text_color">#ff00aaff</color>
+    <color name="edit_text_border_color">#ffaaaaaa</color>
+    <color name="dialog_button_bg">#ffcccccc</color>
+    <color name="progress_text_color">#ff666666</color>
+    <color name="chat_text_color">#ff333333</color>
+    <color name="system_msg_bg_color">#33000000</color>
+    <color name="chat_tool_bar_bg">#22000000</color>
+    <color name="msg_name_color">#ff999999</color>
+    <color name="album_content_color">#fff1f1f1</color>
+    <color name="search_button_color">#ff00b4f1</color>
+
+</resources>

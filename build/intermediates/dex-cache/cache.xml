@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-util\8.1.16.v20140903\a373470a15a6edddac3ec3e96c5dd5a1b795362c\jetty-util-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a373470a15a6edddac3ec3e96c5dd5a1b795362c">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-util-8.1.16.v20140903-4b284349482849d71df85bb3a2e3ad8d12a996da.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\classes-438c7ff6e52c8319b808ce6c3468822047f1b6b5.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.codehaus.jackson\jackson-mapper-asl\1.9.2\95400a7922ce75383866eb72f6ef4a7897923945\jackson-mapper-asl-1.9.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="95400a7922ce75383866eb72f6ef4a7897923945">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jackson-mapper-asl-1.9.2-e5d48e78eccbb312b7b096782eed5e95aa54d759.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcprov-jdk16\1.46\ce091790943599535cbb4de8ede84535b0c1260c\bcprov-jdk16-1.46.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ce091790943599535cbb4de8ede84535b0c1260c">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\bcprov-jdk16-1.46-692fe0b4752defa4fecba3e3e46067084521fd1f.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\com.github.oxo42\stateless4j\2.4.0\128aca4ace585f0b42faa739d0b968a154debb7a\stateless4j-2.4.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="128aca4ace585f0b42faa739d0b968a154debb7a">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\stateless4j-2.4.0-84e2226f3d2eae3555a63c96e2ddbf39754668a1.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-security\8.1.16.v20140903\c9167b815c585e207e8167f7ff4adc6ee817c03f\jetty-security-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c9167b815c585e207e8167f7ff4adc6ee817c03f">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-security-8.1.16.v20140903-a9625f756f6aea7b0ad8dd1c6d0d3971a4b28db5.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\library-2.4.0-5e830bee17471cd0ed2b1f0f900ff2ef7819b51a.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-xml\8.1.16.v20140903\308127f824e69152f5cf489477876f6e17796f5e\jetty-xml-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="308127f824e69152f5cf489477876f6e17796f5e">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-xml-8.1.16.v20140903-fc74a0eed2f386b93b732126d7619acb3303450d.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\exploded-aar\SecuredP2P\AndroidUniversalImageLoader\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ab92b1fc01f2491b50eb85cf3e7e2821c43443e7">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\classes-c632f8419dbd9afadd0ec31ec708425b8fd287c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\libs\dropboxchoosersdk.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3f437251af292049ebe5160701c2ebbf5076474f">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\dropboxchoosersdk-9ce9bde9c23de3ae942985d13bbc06f5e15d22df.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.java-websocket\Java-WebSocket\1.3.0\db2658f013fb163de4a99274c2eb9e17efe535d2\Java-WebSocket-1.3.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="db2658f013fb163de4a99274c2eb9e17efe535d2">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\Java-WebSocket-1.3.0-8299a6421160e855c858eefec1c68f9e5986589c.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.codehaus.jackson\jackson-core-asl\1.9.2\8493982bba1727106d767034bd0d8e77bc1931a9\jackson-core-asl-1.9.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8493982bba1727106d767034bd0d8e77bc1931a9">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jackson-core-asl-1.9.2-3386dbef6e9ce32036143baf2a98eebe321d7386.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\classes-badfb13b51245e0c39dfe0231600843910e41ecc.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-io\8.1.16.v20140903\447d6b4f1db3f2bc5306a71dda136c40fdd9aff7\jetty-io-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="447d6b4f1db3f2bc5306a71dda136c40fdd9aff7">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-io-8.1.16.v20140903-2cb81671b227471fb049ee228bd4c9fca163dec9.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty.orbit\javax.servlet\3.0.0.v201112011016\aaaa85845fb5c59da00193f06b8e5278d8bf3f8\javax.servlet-3.0.0.v201112011016.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0aaaa85845fb5c59da00193f06b8e5278d8bf3f8">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\javax.servlet-3.0.0.v201112011016-d549c4b7242fc8d9746c7540c44a6c7f582d17d4.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\exploded-aar\se.emilsjolander\stickylistheaders\2.5.1\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="126dc495f855ddd8b8b29393f25a7f78c661f445">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\classes-d60e15f3885ee4abf50f54a8cc440ef33bf8be05.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-webapp\8.1.16.v20140903\16a6a5ce23f23d6f41a0b105f6d719d480e6421d\jetty-webapp-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="16a6a5ce23f23d6f41a0b105f6d719d480e6421d">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-webapp-8.1.16.v20140903-e62322dd9f3650ca86aa79790ef1618388d2a0d1.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\com.couchbase.lite\couchbase-lite-java-core\1.0.3.1\c96078de4bf2ec18e016e1453ef7a441b932ddca\couchbase-lite-java-core-1.0.3.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c96078de4bf2ec18e016e1453ef7a441b932ddca">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\couchbase-lite-java-core-1.0.3.1-2777041dd6eda205fea03e0adb18b366376b8d1a.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-servlet\8.1.16.v20140903\56c5c05e854df74c32365a97ca8e1c71c0725df9\jetty-servlet-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="56c5c05e854df74c32365a97ca8e1c71c0725df9">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-servlet-8.1.16.v20140903-5eb293d803c8d4c9cc72dd2bb7a81911f9fc120f.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-eb320e09ddb6cf02bef80aaceec5ed5b4c81c2e2.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.0.3.1\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a2fa0cc9a91d6064857f3ecb6cc4d8415982b567">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\classes-8bc4fb2cae6a31696cf7cec2d5165cc74c4f5dd4.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-continuation\8.1.16.v20140903\c4ec345d8113bcedf6531f4bd2adff89b004e288\jetty-continuation-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c4ec345d8113bcedf6531f4bd2adff89b004e288">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-continuation-8.1.16.v20140903-c5567c86e5e7e419381c888109f5407495e5d743.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-server\8.1.16.v20140903\f0df21b38057d2937fc30052f36ac5579d968855\jetty-server-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f0df21b38057d2937fc30052f36ac5579d968855">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-server-8.1.16.v20140903-ddf279a9289fb119f5090f492edbb5f8e369eaad.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\gson-2.2.4-db96ced42cc06503e06dac631dfa3885c83735c3.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-5558a3399feac650fcf480a43dec1b26c7b799ef.jar" />
+    </item>
+    <item
+        jar="C:\Users\martin\.gradle\caches\modules-2\files-2.1\org.eclipse.jetty\jetty-http\8.1.16.v20140903\795b475235e065e4c26c22b9222c51cf100e76be\jetty-http-8.1.16.v20140903.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="795b475235e065e4c26c22b9222c51cf100e76be">
+        <dex dex="C:\Users\martin\AndroidStudioProjects\SecuredP2P---Android\SecuredP2P\app\build\intermediates\pre-dexed\debug\jetty-http-8.1.16.v20140903-727af86b47b9ad55d6d8a255c54a7a2b6fa20c24.jar" />
+    </item>
+
+</items>

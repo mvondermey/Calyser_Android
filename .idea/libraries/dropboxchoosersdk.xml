@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dropboxchoosersdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/dropboxchoosersdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
