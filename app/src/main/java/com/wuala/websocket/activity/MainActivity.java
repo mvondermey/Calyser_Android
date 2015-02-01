@@ -22,7 +22,6 @@ import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -30,6 +29,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.dropbox.chooser.android.DbxChooser;
+import com.wuala.websocket.LoginActivity;
 import com.wuala.websocket.R;
 import com.wuala.websocket.callback.SendFileListener;
 import com.wuala.websocket.httpserver.WebService;
@@ -43,12 +43,8 @@ import com.wuala.websocket.view.MediaContentFragment;
 import com.wuala.websocket.view.MenuFragment;
 
 import java.io.File;
-import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
-import java.net.Socket;
 import java.net.SocketException;
 import java.util.Enumeration;
 import java.util.List;
@@ -143,6 +139,9 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Login
+        LoginDialog();
+        //
         registerWifiStatus();
         initServer();
         initView();
@@ -150,7 +149,11 @@ public class MainActivity extends FragmentActivity {
         getScreenInformation();
 
     }
-
+    public void LoginDialog() {
+        setContentView(R.layout.activity_login);
+        Intent login = new Intent(this, LoginActivity.class);
+        startActivity(login);
+    }
     /**
      * start the https server and socket server
      */

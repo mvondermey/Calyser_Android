@@ -1,4 +1,4 @@
-package com.wuala.websocket.activity;
+package com.wuala.websocket;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -29,8 +29,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.wuala.websocket.R;
-
 /**
  * A login screen that offers login via email/password.
  */
@@ -59,6 +57,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //Intent intent = getIntent();
         // Set up the login form.
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();

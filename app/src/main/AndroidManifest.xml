@@ -29,7 +29,6 @@
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -39,13 +38,12 @@
         <activity
             android:name=".activity.VideoPlayActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
-
         <service android:name=".httpserver.WebService" />
-
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
+
         </activity>
     </application>
 
