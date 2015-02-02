@@ -140,6 +140,8 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Login
+        android.util.Log.d("MainActivity", "OnCreate");
+        //
         LoginDialog();
         //
         registerWifiStatus();
@@ -149,11 +151,14 @@ public class MainActivity extends FragmentActivity {
         getScreenInformation();
 
     }
+
     public void LoginDialog() {
-        setContentView(R.layout.activity_login);
+//
         Intent login = new Intent(this, LoginActivity.class);
-        startActivity(login);
+        startActivityForResult(login,1);
+        //
     }
+//
     /**
      * start the https server and socket server
      */
@@ -229,6 +234,7 @@ public class MainActivity extends FragmentActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        android.util.Log.d("MainActivity", "OnPause");
     }
 
     @Override
@@ -237,6 +243,7 @@ public class MainActivity extends FragmentActivity {
         ((MainApplication) getApplication()).closeServer(server);
         unregisterReceiver(mWifiReceiver);
         super.onDestroy();
+        android.util.Log.d("MainActivity", "OnDestroy");
     }
 
     /**
