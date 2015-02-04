@@ -5,17 +5,35 @@ package com.wuala.websocket.model;
  */
 public class User {
 
-    private String username;
+    private String username ="";
     private String ip;
     private String device;
-
+    private String password ="";
+    private Long userid = 0L;
 
     public String getUsername() {
         return username;
     }
+    public String getPassword() {
+
+        return password;
+    }
+    public Long getUserid() {
+
+        return userid;
+    }
 
     public void setUsername(String username) {
         this.username = username;
+    }
+    public void setPassword(String password) {
+
+        this.username = password;
+    }
+
+    public void setUserid(Long Userid) {
+
+        this.userid = Userid;
     }
 
     public String getIp() {
