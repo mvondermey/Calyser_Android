@@ -12,6 +12,7 @@ public class User {
     private Long userid = 0L;
 
     public String getUsername() {
+
         return username;
     }
     public String getPassword() {
@@ -24,11 +25,12 @@ public class User {
     }
 
     public void setUsername(String username) {
+
         this.username = username;
     }
     public void setPassword(String password) {
 
-        this.username = password;
+        this.password = password;
     }
 
     public void setUserid(Long Userid) {
@@ -37,19 +39,23 @@ public class User {
     }
 
     public String getIp() {
+
         return ip;
     }
 
     public void setIp(String ip) {
+
         this.ip = ip;
     }
 
 
     public String getDevice() {
+
         return device;
     }
 
     public void setDevice(String device) {
+
         this.device = device;
     }
 

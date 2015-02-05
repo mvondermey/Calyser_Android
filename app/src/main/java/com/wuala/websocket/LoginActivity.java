@@ -4,9 +4,12 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.CursorLoader;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
@@ -27,6 +30,11 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.nostra13.universalimageloader.utils.L;
+import com.wuala.websocket.model.User;
+import com.wuala.websocket.util.DBTools;
 
 import com.wuala.websocket.activity.MainActivity;
 
@@ -49,6 +57,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
      * Keep track of the login task to ensure we can cancel it if requested.
      */
     private UserLoginTask mAuthTask = null;
+    private User myUser = null;
 
     // UI references.
     private AutoCompleteTextView mEmailView;
@@ -126,8 +135,12 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         View focusView = null;
 
 
-        // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
+        // Check for a valid password
+        if (TextUtils.isEmpty(password)) {
+            mEmailView.setError(getString(R.string.error_field_required));
+            focusView = mPasswordView;
+            cancel = true;
+        } else if (!isPasswordValid(password)) {
             mPasswordView.setError(getString(R.string.error_invalid_password));
             focusView = mPasswordView;
             cancel = true;
@@ -152,7 +165,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
-            mAuthTask = new UserLoginTask(email, password);
+            mAuthTask = new UserLoginTask(email, password,this);
             mAuthTask.execute((Void) null);
         }
     }
@@ -294,35 +307,51 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 
         private final String mEmail;
         private final String mPassword;
+        private final Context mContext;
 
-        UserLoginTask(String email, String password) {
+
+        UserLoginTask(String email, String password, Context context) {
             mEmail = email;
             mPassword = password;
+            mContext= context;
+            Log.d("DBTools"," email= "+mEmail+" password= "+mPassword);
         }
 
         @Override
         protected Boolean doInBackground(Void... params) {
-            // TODO: attempt authentication against a network service.
+            DBTools dbTools=null;
 
             try {
-                // Simulate network access.
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                return false;
-            }
+                dbTools = new DBTools(mContext);
+                myUser = dbTools.getUser(mEmail);
 
+                if (myUser.getUserid()>0) {
+                    // Account exists, check password.
+                    if (myUser.getPassword().equals(mPassword))
+                        return true;
+                    else
+                        return false;
+                } else {
+                    //
+                    Log.d("UP", " username= " + mEmail + " password= " + mPassword);
+                    //
+                    myUser.setUsername(mEmail);
+                    myUser.setPassword(mPassword);
+                    //
+                    Log.d("UP2", " username= " + myUser.getUsername() + " password= " + myUser.getPassword());
 
-            for (String credential : DUMMY_CREDENTIALS) {
-                String[] pieces = credential.split(":");
-                if (pieces[0].equals(mEmail)) {
-                    // Account exists, return true if the password matches.
-                    return pieces[1].equals(mPassword);
+                    //
+                    return true;
+                    //
                 }
+            } finally{
+                if (dbTools!=null)
+                    dbTools.close();
             }
-
-            // TODO: register the new account here.
-            return true;
+            //
         }
+
+//
 
         @Override
         protected void onPostExecute(final Boolean success) {
@@ -330,12 +359,47 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             showProgress(false);
 
             Log.d("LoginActivity","Success ="+success.toString());
+            Log.d("UP3", " username= " + myUser.getUsername() + " password= " + myUser.getPassword());
 
             if (success) {
-                finish();
-               //
+                if (myUser.getUserid()>0) {
+                   finish();
+                }else{
+                        // Register
+                        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                switch (which) {
+                                    case DialogInterface.BUTTON_POSITIVE:
+                                        DBTools dbTools = null;
+                                        try {
+                                            dbTools = new DBTools(mContext);
+                                            myUser = dbTools.insertUser(myUser);
+                                            Toast myToast = Toast.makeText(mContext, R.string.updatingReport, Toast.LENGTH_SHORT);
+                                            myToast.show();
+                                        } finally {
+                                            if (dbTools != null)
+                                                dbTools.close();
+                                        }
+                                        break;
 
+                                    case DialogInterface.BUTTON_NEGATIVE:
+                                        mPasswordView.setError(getString(R.string.error_incorrect_password));
+                                        mPasswordView.requestFocus();
+                                        break;
+                                }
+                            }
+                        };
+                        //
+                        AlertDialog.Builder builder = new AlertDialog.Builder(this.mContext);
+                        builder.setMessage(R.string.confirm_registry).setPositiveButton(R.string.yes, dialogClickListener)
+                                .setNegativeButton(R.string.no, dialogClickListener).show();
+                    }
+                //
+
+                //
             } else {
+                //
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
             }

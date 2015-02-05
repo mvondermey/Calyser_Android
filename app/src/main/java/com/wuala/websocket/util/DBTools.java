@@ -10,6 +10,7 @@ package com.wuala.websocket.util;
         import android.database.Cursor;
         import android.database.sqlite.SQLiteDatabase;
         import android.database.sqlite.SQLiteOpenHelper;
+        import android.util.Log;
 
         import com.wuala.websocket.model.User;
 
@@ -54,6 +55,7 @@ public class DBTools extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put("username", queryValues.getUsername());
         values.put("password", queryValues.getPassword());
+        Log.d("DBTools"," username= "+values.getAsString("username")+ " password= "+values.getAsString("password"));
         queryValues.setUserid(database.insert("logins", null, values));
         database.close();
         return queryValues;
@@ -70,15 +72,40 @@ public class DBTools extends SQLiteOpenHelper {
     }
 
     public User getUser (String username){
+
+        Log.d("DBTools","Inside GetUser");
+//
+        String query2 = "Select * from logins";
+        Log.d("DBTools",query2);
+        SQLiteDatabase database2 = this.getReadableDatabase();
+        Cursor cursor2 = database2.rawQuery(query2, null);
+        if (cursor2.moveToFirst()) {
+            do {
+                Log.d("DBTools", " 0= " + cursor2.getInt(0)+" 1= " + cursor2.getString(1) + " 2= " + cursor2.getString(2));
+            } while (cursor2.moveToNext());
+        }
+        //
+        String query1 = "Select count(*) from logins";
+        Log.d("DBTools",query1);
+        SQLiteDatabase database1 = this.getReadableDatabase();
+        Cursor cursor1 = database1.rawQuery(query1, null);
+        if (cursor1.moveToFirst()) {
+            do {
+                Log.d("DBTools", "Count " + cursor1.getInt(0));
+            } while (cursor1.moveToNext());
+        }
+        //
         String query = "Select userId, password from logins where username ='"+username+"'";
+        Log.d("DBTools",query);
         User myUser = new User() ;
         myUser.setUsername(username);
         SQLiteDatabase database = this.getReadableDatabase();
         Cursor cursor = database.rawQuery(query, null);
         if (cursor.moveToFirst()){
             do {
+                Log.d("DBTools","cursor.getLong "+cursor.getLong(0));
                 myUser.setUserid(cursor.getLong(0));
-                myUser.setPassword(cursor.getString(2));
+                myUser.setPassword(cursor.getString(1));
             } while (cursor.moveToNext());
         }
         return myUser;
